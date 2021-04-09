@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/cv"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientatio="horizontal"
+            android:padding="6dp">
+            <ImageView
+                android:id="@+id/iconImageview"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
+                app:srcCompat="@drawable/ic_menu_camera"
+                android:layout_alignParentLeft="true"/>
+            <LinearLayout
+                android:id="@+id/linearlayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="2dp"
+                android:layout_toEndOf="@+id/iconImageview"
+                android:layout_marginLeft="4dp"
+                android:layout_toRightOf="@+id/iconImageview">
+                <TextView
+                    android:id="@+id/txtnombrecliente"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:text="Nombre del cliente"
+                    android:textColor="@android:color/black"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:id="@+id/txtnombrepedido"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:text="Nombre del pedido"
+                    android:textColor="@android:color/black"
+                    android:textSize="15dp"/>
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/txtprecio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="S/. 23"
+                android:textColor="@android:color/black"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textSize="15dp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientatio="horizontal"
+            android:padding="6dp">
+            <LinearLayout
+                android:id="@+id/linearlayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerHorizontal="true">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:text="HORA: "
+                    android:textColor="@android:color/black"
+                    android:textSize="15dp"/>
+                <TextView
+                    android:id="@+id/txthorapedido"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:text="08:15 P.M."
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:textSize="15dp"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
